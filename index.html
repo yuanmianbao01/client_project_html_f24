@@ -3,27 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css " />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Student Success Portal</title>
   </head>
   <body>
-    <a href="#main">Skip to Main Content</a>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
     <header>
       <img
+        class="logo"
         src="images/UMSI_signature_vertical_informal_solidblue.jpg"
         alt="UMSI Logo"
       />
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="caps.html">CPAS</a></li>
-          <li><a href="cew+.html">CEW+</a></li>
-          <li><a href="foodpantry.html">Food Pantry</a></li>
+          <div class="active">
+            <li><a href="index.html">Home</a></li>
+          </div>
+          <div>
+            <li><a href="caps.html">CPAS</a></li>
+          </div>
+          <div>
+            <li><a href="cew+.html">CEW+</a></li>
+          </div>
+          <div>
+            <li><a href="foodpantry.html">Food Pantry</a></li>
+          </div>
         </ul>
       </nav>
       <h1>Student Success Portal</h1>
     </header>
-    <main id="main">
-      <section>
+    <main class="container" id="main">
+      <div class="overview">
         <h2>Welcome to the UM Grad Success Navigator</h2>
         <p>Your Comprehensive Guide to Resources for Graduate School Success</p>
         <p>
@@ -38,8 +49,8 @@
           <li>Life Outside Classroom</li>
           <li>Contact</li>
         </ol>
-      </section>
-      <section>
+      </div>
+      <div class="physical_health">
         <h2>Physical Health</h2>
         <p>
           Keeping your body healthy is essential for success. The University of
@@ -74,9 +85,9 @@
             gym facilities to stay active and healthy.
           </p>
         </article>
-      </section>
+      </div>
 
-      <section>
+      <div class="mental_health">
         <h2>Mental Health</h2>
         <p>
           Maintaining your mental well-being is crucial for thriving in graduate
@@ -113,9 +124,9 @@
             coping strategies.
           </p>
         </article>
-      </section>
+      </div>
 
-      <section id="life-outside-classroom">
+      <div class="life_outside_classroom" id="life-outside-classroom">
         <h2>Life Outside the Classroom</h2>
         <p>
           Graduate school is more than just academics. It's important to
@@ -149,7 +160,7 @@
             experience.
           </li>
         </ul>
-      </section>
+      </div>
     </main>
     <footer>
       <p>

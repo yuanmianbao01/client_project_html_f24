@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: #EDECEC;
+    color: #131516;
+}
+
+h1{
+    font-size: xx-large;
+    font-family: 'IBM Plex Sans', 'Monserrat';
+    text-align: center;
+} 
+
+h2{
+    font-size: x-large;
+    font-family: 'IBM Plex Sans', 'Monserrat';
+    color: #00274C;
+}
+
+p{
+    line-height: 1.5;
+}
+
+img{
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+li{
+    display: inline;
+    margin-left: 50px;
+}
+
+/* Skip to main */
+.skip a{
+    position: absolute;
+    top: -40px;
+  }
+  
+  
+.skip a:focus{
+    position: absolute;
+    top: 20px;
+  }
+
+:focus{
+    border: solid 2px #00274C;
+    border-radius: 10%;
+  }
+
+/* grid related */
+
+.container{
+    display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  row-gap: 2%;
+  column-gap: 2%;
+}
+
+/* logo */
+.logo{
+    width: 3rem;
+    margin: 0 auto;
+}
+
+/* nav styling */
+nav{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+nav div{
+    padding: 0.5em;
+    margin: 0.5em;
+    font-size: 1rem;
+    background-color: #00274C;
+    color: #ffffff;
+}
+
+nav .active{
+    background-color: #FFCB05;
+    color: #00274C;
+    font-weight: bold;
+}
+
+
+/* index page grid items */
+.overview{
+    grid-column: 1/span3;
+    text-align: left;
+}
+
+.physical_health, .mental_health, .life_outside_classroom{
+    grid-column: 2/span 1;
+}
+
+.physical_health{
+    grid-row: 2/span 1;
+}
+
