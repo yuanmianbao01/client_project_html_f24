@@ -18,7 +18,7 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="caps.html">CPAS</a></li>
+          <li><a href="caps.html">CAPS</a></li>
           <li class="active"><a href="cew+.html">CEW+</a></li>
           <li><a href="foodpantry.html">Food Pantry</a></li>
         </ul>
@@ -26,7 +26,7 @@
       <h1>Academic Suport at UMSI</h1>
     </header>
     <main class="container" id="main">
-      <div>
+      <div class="welcome">
         <h2>Center for the Education of Women +</h2>
         <p>
           At CEW+, we navigate circumstantial barriers by providing academic,
@@ -39,59 +39,94 @@
         </p>
       </div>
 
-      <div>
+      <div class="small_container">
         <h2>EVENTS & WORKSHOPS</h2>
         <div>
           <h3>70th Annual AAUW Used Book Sale</h3>
+
+          <p>September 6, 2024 8:00 am -</p>
+          <p>September 8, 2024 3:00 pm</p>
+          <p>Washtenaw Community College</p>
           <img
             src="images/UMSI_JesseJohnstonClass_01.jpg"
             alt="A man lecturing in front of students in a classroom"
           />
-          <p>September 6, 2024 8:00 am -</p>
-          <p>September 8, 2024 3:00 pm</p>
-          <p>
-            Washtenaw Community College, Morris Lawrence Building, 4800 E Huron
-            River Dr, Ann Arbor, MI 48105
-          </p>
         </div>
         <div>
-          <h3>
-            VIRTUAL | CEW+Inspire Midweek Mindfulness Guided Sit, September 11
-          </h3>
+          <h3>VIRTUAL | CEW+Inspire Midweek Mindfulness</h3>
+          <p>September 11, 2024</p>
+          <p>12:15 pm - 12:45 pm</p>
+          <p>Virtual</p>
           <img
             src="images/UMSI_MHIClassroom_02202023_18.jpg"
             alt="Students discussing in a classroom"
           />
-          <p>September 11, 2024</p>
-          <p>12:15 pm - 12:45 pm</p>
-          <p>Virtual</p>
+        </div>
+
+        <div>
+          <h3>Annual Networking Mixer - Join Your Fellow Students</h3>
+          <p>September 20, 2024</p>
+          <p>5:00 pm - 7:30 pm</p>
+          <p>Michigan Union, Ann Arbor</p>
+          <img
+            src="images/UMSI_MHIClassroom_02202023_18.jpg"
+            alt="Students discussing in a classroom"
+          />
         </div>
       </div>
-      <div>
+      <div class="small_container">
         <h2>NEWS</h2>
-        <a
-          href="https://www.cew.umich.edu/news-story/let-no-one-tell-her-otherwise-remembering-jane-m-bloom-1924-2022/"
-          ><h3>
-            “Let no one tell her otherwise”: Remembering Jane M. Bloom,
-            1924-2022
-          </h3></a
-        >
-        <h4>May 28, 2024</h4>
-        <p>
-          The family of the late Jane Bloom, M.D., will hold a celebration of
-          life on July 13th, 2024, from 1:00 pm to 4:00 pm at the Eagle Crest
-          Golf Club at…
-        </p>
-        <a
-          href="https://www.cew.umich.edu/news-story/cew-celebrates-2023-24-graduates/"
-          ><h3>CEW+ Celebrates 2023-24 Graduates</h3></a
-        >
-        <h4>May 15, 2024</h4>
-        <p>
-          On May 2nd, CEW+ marked the end of the term by honoring all the
-          graduating students connected to the Center through scholarships,
-          fellowships, or membership in Michigan Caregivers and Student Parents…
-        </p>
+
+        <div>
+          <a
+            href="https://www.cew.umich.edu/news-story/let-no-one-tell-her-otherwise-remembering-jane-m-bloom-1924-2022/"
+            ><h3>“Let no one tell her otherwise”: Remembering</h3></a
+          >
+          <h4>May 28, 2024</h4>
+          <p>
+            The family of the late Jane Bloom, M.D., will hold a celebration of
+            life on July 13th, 2024, from 1:00 pm to 4:00 pm at the Eagle Crest
+            Golf Club.
+          </p>
+          <img
+            src="images/UMSI_MHIClassroom_02202023_18.jpg"
+            alt="Students discussing in a classroom"
+          />
+        </div>
+
+        <div>
+          <a
+            href="https://www.cew.umich.edu/news-story/cew-celebrates-2023-24-graduates/"
+            ><h3>CEW+ Celebrates 2023-24 Graduates</h3></a
+          >
+          <h4>May 15, 2024</h4>
+          <p>
+            On May 2nd, CEW+ marked the end of the term by honoring all the
+            graduating students connected to the Center through scholarships,
+            fellowships, or membership in Michigan Caregivers.
+          </p>
+          <img
+            src="images/UMSI_MHIClassroom_02202023_18.jpg"
+            alt="Students discussing in a classroom"
+          />
+        </div>
+
+        <div>
+          <a
+            href="https://www.cew.umich.edu/news-story/cew-celebrates-2023-24-graduates/"
+            ><h3>Fall 2024 CEW+ Mentor Program Launches</h3></a
+          >
+          <p>
+            The CEW+ Mentor Program has officially launched for the Fall 2024
+            term, connecting students with experienced mentors to support their
+            academic and professional growth. Applications are open until
+            September 30, 2024.
+          </p>
+          <img
+            src="images/UMSI_MHIClassroom_02202023_18.jpg"
+            alt="Students discussing in a classroom"
+          />
+        </div>
       </div>
     </main>
     <footer class="container">
@@ -107,7 +142,11 @@
           |
           <a href="https://mbc.studentlife.umich.edu/">Food Pantry</a>
         </p>
+        <p>© Copyrights <span id="year"></span>. All rights reserved.</p>
       </div>
     </footer>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
   </body>
 </html>

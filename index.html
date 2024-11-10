@@ -18,7 +18,7 @@
       <nav>
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="caps.html">CPAS</a></li>
+          <li><a href="caps.html">CAPS</a></li>
           <li><a href="cew+.html">CEW+</a></li>
           <li><a href="foodpantry.html">Food Pantry</a></li>
         </ul>
@@ -26,111 +26,119 @@
       <h1>Student Success Portal</h1>
     </header>
     <main class="container" id="main">
-      <div>
+      <div class="welcome">
         <h2>Welcome to the UM Grad Success Navigator</h2>
         <p>Your Comprehensive Guide to Resources for Graduate School Success</p>
         <p>
           This guide is set up to help you be successul inside and outside of
           the classroom and we have included the following resources throughout
-          our site:
+          our site.
         </p>
-        <ol>
-          <li>Physical Health</li>
-          <li>Mental Health</li>
-          <li>Life Outside Classroom</li>
-          <li>Contact</li>
-        </ol>
       </div>
-      <div>
+      <div class="medium_container">
         <h2>Physical Health</h2>
-        <p>Keeping your body healthy is essential for success.</p>
-        <article>
+        <div>
           <h3>University Health Service (UHS)</h3>
-          <figure>
-            <img
-              src="images/UHS.jpg"
-              alt="University Health Services building"
-            />
-            <figcaption>University Health Services Building</figcaption>
-          </figure>
-        </article>
-      </div>
-      <div>
-        <article>
+          <img src="images/UHS.jpg" alt="University Health Services building" />
+        </div>
+        <div>
           <h3>Recreational Sports</h3>
-          <figure>
-            <img
-              src="images/UMSI_CampusFall_UMSIBackpack_02.jpg"
-              alt="A student wears a UMSI backpack in fall on the drag."
-            />
-            <figcaption>UMSI out in the fall!</figcaption>
-          </figure>
           <p>
             Participate in various fitness programs, sports clubs, and use of
             gym facilities to stay active and healthy.
           </p>
-        </article>
+          <img
+            src="images/UMSI_CampusFall_UMSIBackpack_02.jpg"
+            alt="A student wears a UMSI backpack in fall on the drag."
+          />
+        </div>
       </div>
 
-      <div class="mental_health">
+      <div class="small_container">
         <h2>Mental Health</h2>
         <p>
           Maintaining your mental well-being is crucial for thriving in graduate
           school. Here are resources to support your mental health:
         </p>
-        <article>
+        <div>
           <h3>Counseling and Psychological Services (CAPS):</h3>
           <p>
             Access individual counseling, group therapy, workshops, and crisis
             intervention services.
           </p>
-        </article>
-      </div>
-      <div>
-        <article>
+        </div>
+        <div>
           <h3>Wellness Coaching:</h3>
 
           <p>
             Work with a wellness coach to develop strategies for managing
             stress, time, and overall well-being.
           </p>
-        </article>
-
-        <article>
+        </div>
+        <div>
           <h3>Support Groups:</h3>
 
           <p>
             Join peer support groups for shared experiences and collective
             coping strategies.
           </p>
-        </article>
+        </div>
       </div>
 
-      <div id="life-outside-classroom">
+      <div class="small_container">
         <h2>Life Outside the Classroom</h2>
         <p>
           Graduate school is more than just academics. It's important to
           cultivate a balanced life. Here are some resources to help you enjoy
           life outside the classroom:
         </p>
+        <div>
+          <h3>Student Organizations</h3>
+          <p>
+            Join one of the many student organizations to connect with peers who
+            share your interests and passions.
+          </p>
+        </div>
+
+        <div>
+          <h3>Arts and Culture</h3>
+          <p>
+            Explore UM's vibrant arts scene with events, exhibitions, and
+            performances happening year-round.
+          </p>
+        </div>
+        <div>
+          <h3>Career Services</h3>
+          <p>
+            Utilize career counseling, job search resources, and networking
+            opportunities to prepare for your professional future.
+          </p>
+        </div>
       </div>
-      <div>
-        <ul>
-          <li>
-            <strong>Student Organizations:</strong> Join one of the many student
-            organizations to connect with peers who share your interests and
-            passions.
-          </li>
-          <li>
-            <strong>Arts and Culture:</strong> Explore UM's vibrant arts scene
-            with events, exhibitions, and performances happening year-round.
-          </li>
-          <li>
-            <strong>Career Services:</strong> Utilize career counseling, job
-            search resources, and networking opportunities to prepare for your
-            professional future.
-          </li>
-        </ul>
+
+      <div class="small_container form">
+        <h2>Feedback for Us</h2>
+        <p>Let us know what you think about this website, as well as what you'd like to see here.</p>
+        <form action="https://formspree.io/f/xjkvywpg" method="POST">
+          <fieldset>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required />
+    
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required />
+    
+            <label for="email">Email </label>
+            <input type="email" id="email" name="email" required />
+    
+          
+    
+            <label for="improvement">What would you like us to improve?</label>
+            <textarea id="improvement" name="improvement" rows="5"></textarea>
+    
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </body>
       </div>
     </main>
     <footer class="container">
@@ -146,7 +154,11 @@
           |
           <a href="https://mbc.studentlife.umich.edu/">Food Pantry</a>
         </p>
+        <p>© Copyrights <span id="year"></span>. All rights reserved.</p>
       </div>
     </footer>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+      </script>
   </body>
 </html>

@@ -18,7 +18,7 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="caps.html">CPAS</a></li>
+          <li><a href="caps.html">CAPS</a></li>
           <li><a href="cew+.html">CEW+</a></li>
           <li class="active"><a href="foodpantry.html">Food Pantry</a></li>
         </ul>
@@ -26,9 +26,9 @@
       <h1>Academic Suport at UMSI</h1>
     </header>
     <main class="container" id="main">
-      <div>
+      <div class="welcome">
         <h2>WELCOME TO MAIZE & BLUE CUPBOARD</h2>
-        <h3>OUR MISSION</h3>
+        <h2>OUR MISSION</h2>
         <p>
           To ensure members of the University of Michigan community—whether on a
           tight budget or physically restrained from getting to a grocery
@@ -41,64 +41,78 @@
         />
       </div>
 
-      <div>
-        <h3>WHAT WE PROVIDE</h3>
-        <ul>
-          <li>
-            <h4>FOOD</h4>
-            <p>
-              Produce, dairy, meat, bread, frozen and shelf-stable foods (i.e.
-              rice, cans, tuna, etc.)
-            </p>
-          </li>
-          <li>
-            <h4>KITCHEN & COOKING</h4>
-            <p>
-              Dishes, silverware, pots & pans, Tupperware, cutting boards,
-              knives, and other kitchenware
-            </p>
-          </li>
-          <li>
-            <h4>PERSONAL & HOUSEHOLD</h4>
-            <p>
-              Trash bags, toilet paper, cleaning supplies, hygiene products,
-              school supplies, baby items and more
-            </p>
-          </li>
-          <li>
-            <h4>SUPPORT</h4>
-            <p>
-              Get connected to campus experts like CAPS, Dean of Students and
-              Financial Aid, as well as SNAP (Michigan’s food program)
-            </p>
-          </li>
-        </ul>
-        <img
+      <div class="small_container">
+        <h2>WHAT WE PROVIDE</h2>
+        <div>
+          <h3>FOOD</h3>
+          <p>
+            Produce, dairy, meat, bread, frozen and shelf-stable foods (i.e.
+            rice, cans, tuna, etc.)
+          </p>
+        </div>
+        <div>
+          <h3>KITCHEN & COOKING</h3>
+          <p>
+            Dishes, silverware, pots & pans, Tupperware, cutting boards, knives,
+            and other kitchenware
+          </p>
+        </div>
+        <div>
+          <h3>PERSONAL & HOUSEHOLD</h3>
+          <p>
+            Trash bags, toilet paper, cleaning supplies, hygiene products,
+            school supplies, baby items and more
+          </p>
+        </div>
+        <!-- <img
           src="images/UMSI_Fallcampus_10012021_011.jpg"
           alt="The UMSI campus during fall time"
-        />
+        /> -->
       </div>
 
-      <div>
-        <h3>NEWS</h3>
-        <h4>Fall 2024 Mobile Distribution for North Campus</h4>
-        <p>
-          U-M’s Maize & Blue Cupboard (MBC), the College of Engineering, Student
-          Life, and Ann Arbor-based Food Gatherers will host North Campus mobile
-          food distributions to make MBC resources more accessible for North
-          Campus residents.
-        </p>
-        <img
-          src="images/carrot.jpg"
-          alt="a bunch of carrots placed on a wood table"
-        />
-        <h4>Mobile Distribution for North Campus — Fall 2023 Semester</h4>
-        <p>
-          Students who live on North Campus have easier access to free groceries
-          thanks to U-M’s Maize & Blue Cupboard (MBC), the College of
-          Engineering, Student Life, and Ann Arbor-based Food Gatherers.
-        </p>
-        <img src="images/grocery.jpg" alt="A shopping bag full of red apples" />
+      <div class="small_container">
+        <h2>NEWS</h2>
+        <div>
+          <h3>Fall 2024 Mobile Distribution for North Campus</h3>
+          <p>
+            U-M’s Maize & Blue Cupboard (MBC), the College of Engineering,
+            Student Life, and Ann Arbor-based Food Gatherers will host North
+            Campus mobile food distributions to make MBC resources more
+            accessible for North Campus residents.
+          </p>
+          <img
+            src="images/carrot.jpg"
+            alt="a bunch of carrots placed on a wood table"
+          />
+        </div>
+        <div>
+          <h3>Mobile Distribution for North Campus — Fall 2023 Semester</h3>
+          <p>
+            Students who live on North Campus have easier access to free
+            groceries thanks to U-M’s Maize & Blue Cupboard (MBC), the College
+            of Engineering, Student Life, and Ann Arbor-based Food Gatherers.
+          </p>
+          <img
+            src="images/grocery.jpg"
+            alt="A shopping bag full of red apples"
+          />
+        </div>
+        <div>
+          <h3>
+            Thanksgiving Food Drive & Special Distribution Event - November 2024
+          </h3>
+          <p>
+            To ensure that every student has access to nutritious food this
+            holiday season, U-M’s Maize & Blue Cupboard (MBC) will host a
+            Thanksgiving food drive, featuring a variety of holiday staples and
+            fresh produce. North Campus residents are encouraged to attend and
+            bring reusable bags.
+          </p>
+          <img
+            src="images/grocery.jpg"
+            alt="A shopping bag full of red apples"
+          />
+        </div>
       </div>
     </main>
     <footer class="container">
@@ -114,7 +128,11 @@
           |
           <a href="https://mbc.studentlife.umich.edu/">Food Pantry</a>
         </p>
+        <p>© Copyrights <span id="year"></span>. All rights reserved.</p>
       </div>
     </footer>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
   </body>
 </html>
